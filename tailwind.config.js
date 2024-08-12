@@ -3,7 +3,7 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/flowbite/**/*.js",
+    "./node_modules/flowbite-react/lib/esm/**/*.js",
   ],
   darkMode: "class",
   theme: {
@@ -22,6 +22,9 @@ export default {
           900: "#1e3a8a",
           950: "#172554",
         },
+      },
+      animation: {
+        "spin-slow": "spin 1.5s linear infinite",
       },
     },
     fontFamily: {
