@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import authReducer from "./authSlice";
+import devicesSlice from "./devicesSlice";
 
 const store = configureStore({
     reducer: {
         auth: authReducer,
+        devices: devicesSlice,
     },
 });
 
